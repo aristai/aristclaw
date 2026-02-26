@@ -19,12 +19,18 @@ function App() {
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1 className="hero-title">
-            AristAI + OpenClaw = <span className="hero-highlight">AristClaw</span>
+            AristAI + OpenClaw<br />
+            <span className="hero-highlight">AristClaw</span>
           </h1>
           <p className="hero-subtitle">
             AI-powered education — personalized tutoring, smarter study tools, and intelligent curriculum design.
           </p>
-          <span className="hero-powered">Powered by Aedify</span>
+          <a href="https://aedify.ai/openclaw-landing" target="_blank" rel="noopener noreferrer" className="cta-btn">
+            Try It Now
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
         </div>
       </section>
 
@@ -38,12 +44,6 @@ function App() {
           <img src="/aedify-logo.svg" alt="Aedify" className="logo-bar-img logo-bar-img-tall" />
         </div>
         <div className="cta-block">
-          <a href="https://aedify.ai/openclaw-landing" target="_blank" rel="noopener noreferrer" className="cta-btn">
-            Try It Now
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </a>
           <div className="access-code">
             <span className="access-label">Early Access — 1 Month Free</span>
             <span className="scratch-wrapper">
@@ -53,6 +53,7 @@ function App() {
               </span>
             </span>
           </div>
+          <span className="powered-label">Powered by Aedify</span>
         </div>
       </section>
 
