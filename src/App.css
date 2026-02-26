@@ -122,6 +122,18 @@
   white-space: nowrap;
 }
 
+.hero-powered {
+  display: inline-block;
+  margin-top: 24px;
+  background: rgba(255,255,255,0.92);
+  padding: 12px 28px;
+  border-radius: 24px;
+  font-size: 18px;
+  color: #111;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
 .hero-highlight {
   background: linear-gradient(135deg, #7b8fff, #c084fc);
   -webkit-background-clip: text;
@@ -249,17 +261,68 @@
   color: #595959;
 }
 
+.scratch-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
 .access-value {
   font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", monospace;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 700;
   color: #111;
   background: #fff;
-  padding: 4px 12px;
+  padding: 8px 16px;
   border-radius: 6px;
   border: 1px solid #e5e5e5;
   letter-spacing: 0.5px;
   user-select: all;
+  display: inline-block;
+}
+
+.scratch-cover {
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #888, #a0a0a0 30%, #777 50%, #999 70%, #888);
+  background-size: 200% 200%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: clip-path 0.6s ease, opacity 0.4s ease;
+  clip-path: inset(0 0 0 0);
+  overflow: hidden;
+}
+
+.scratch-cover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 2px,
+    rgba(255,255,255,0.08) 2px,
+    rgba(255,255,255,0.08) 4px
+  );
+}
+
+.scratch-text {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 1;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  white-space: nowrap;
+}
+
+.scratch-wrapper:hover .scratch-cover {
+  clip-path: inset(0 0 0 100%);
+  opacity: 0;
 }
 
 /* ── About / Cards ── */

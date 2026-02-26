@@ -24,6 +24,7 @@ function App() {
           <p className="hero-subtitle">
             AI-powered education — personalized tutoring, smarter study tools, and intelligent curriculum design.
           </p>
+          <span className="hero-powered">Powered by Aedify</span>
         </div>
       </section>
 
@@ -44,8 +45,13 @@ function App() {
             </svg>
           </a>
           <div className="access-code">
-            <span className="access-label">Early Access Code</span>
-            <span className="access-value">ARISTAI+OPENCLAW</span>
+            <span className="access-label">Early Access — 1 Month Free</span>
+            <span className="scratch-wrapper">
+              <span className="access-value">ARISTCLAW</span>
+              <span className="scratch-cover">
+                <span className="scratch-text">HOVER TO REVEAL</span>
+              </span>
+            </span>
           </div>
         </div>
       </section>
@@ -98,17 +104,6 @@ function App() {
             <h3 className="card-title">Code Assistant</h3>
             <p className="card-desc">Real-time coding help with OpenClaw — debugging, code review, and step-by-step tutorials.</p>
           </div>
-        </div>
-      </section>
-
-      {/* Partnership banner */}
-      <section className="partnership">
-        <div className="partnership-inner">
-          <p className="partnership-label">Strategic Partnership</p>
-          <h2 className="partnership-heading">AristAI + Aedify</h2>
-          <p className="partnership-desc">
-            AristAI partners with Aedify to deliver reliable, scalable, and intelligent educational tools to institutions worldwide.
-          </p>
         </div>
       </section>
 
