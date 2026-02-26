@@ -4,38 +4,39 @@ import "./App.css";
 function App() {
   return (
     <div className="page">
-      {/* Header - just logo */}
-      <header className="header">
-        <div className="header-inner">
-          <div className="logo">
-            <img src="/aristai-logo-full.webp" alt="AristAI" className="logo-full" />
+      <div className="above-fold">
+        {/* Header - just logo */}
+        <header className="header">
+          <div className="header-inner">
+            <div className="logo">
+              <img src="/aristai-logo-full.webp" alt="AristAI" className="logo-full" />
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
 
-      {/* Hero */}
-      <section className="hero">
-        <div className="hero-bg" />
-        <div className="hero-overlay" />
-        <div className="hero-content">
-          <h1 className="hero-title">
-            AristAI + OpenClaw<br />
-            <span className="hero-highlight">AristClaw</span>
-          </h1>
-          <p className="hero-subtitle">
-            AI-powered education — personalized tutoring, smarter study tools, and intelligent curriculum design.
-          </p>
-          <a href="https://aedify.ai/openclaw-landing" target="_blank" rel="noopener noreferrer" className="cta-btn">
-            Try It Now
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </a>
-        </div>
-      </section>
+        {/* Hero */}
+        <section className="hero">
+          <div className="hero-bg" />
+          <div className="hero-overlay" />
+          <div className="hero-content">
+            <h1 className="hero-title">
+              AristAI + OpenClaw<br />
+              <span className="hero-highlight">AristClaw</span>
+            </h1>
+            <p className="hero-subtitle">
+              AI-powered education — personalized tutoring, smarter study tools, and intelligent curriculum design.
+            </p>
+            <a href="https://aedify.ai/openclaw-landing" target="_blank" rel="noopener noreferrer" className="cta-btn">
+              Try It Now
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </section>
 
-      {/* Partner logos */}
-      <section className="logo-bar">
+        {/* Partner logos */}
+        <section className="logo-bar">
         <div className="logo-bar-inner">
           <img src="/aristai-logo-full.webp" alt="AristAI" className="logo-bar-img" />
           <span className="logo-bar-x">&times;</span>
@@ -56,6 +57,7 @@ function App() {
           <span className="powered-label">Powered by Aedify</span>
         </div>
       </section>
+      </div>
 
       {/* What we do */}
       <section className="about">

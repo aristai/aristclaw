@@ -58,11 +58,18 @@
   color: #f5b731;
 }
 
+/* ── Above Fold ── */
+.above-fold {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
 /* ── Hero ── */
 .hero {
   position: relative;
   width: 100%;
-  min-height: calc(100vh - 69px - 220px);
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -483,16 +490,58 @@
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
+  .hero-content {
+    padding: 32px 20px;
+  }
+
   .hero-subtitle {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .logo-bar {
+    padding: 20px 16px;
+  }
+
+  .logo-bar-inner {
+    gap: 12px;
+  }
+
+  .logo-bar-img {
+    height: 28px;
+  }
+
+  .logo-bar-img-wide {
+    height: 24px;
+  }
+
+  .logo-bar-img-tall {
+    height: 24px;
+  }
+
+  .logo-bar-x {
+    font-size: 14px;
+  }
+
+  .cta-block {
+    margin-top: 16px;
+    gap: 8px;
+  }
+
+  .access-code {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+    padding: 8px 14px;
+  }
+
+  .access-value {
     font-size: 15px;
+    padding: 6px 12px;
   }
 
-  .hero-content {
-    padding: 56px 20px;
-  }
-
-  .hero-content {
-    padding: 40px 20px;
+  .powered-label {
+    font-size: 12px;
   }
 
   .about {
@@ -520,22 +569,21 @@
   .partnership-desc {
     font-size: 14px;
   }
-
-  .access-code {
-    flex-direction: column;
-    gap: 6px;
-    text-align: center;
-  }
 }
 
 @media (max-width: 480px) {
-  .partner-chip {
-    font-size: 12px;
-    padding: 6px 12px;
+  .hero-content {
+    padding: 24px 16px;
   }
 
-  .hero-partners {
-    gap: 8px;
+  .hero-subtitle {
+    font-size: 13px;
+    margin-bottom: 14px;
+  }
+
+  .cta-btn {
+    font-size: 14px;
+    padding: 12px 28px;
   }
 
   .card {
