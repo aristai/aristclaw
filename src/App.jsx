@@ -46,9 +46,9 @@ function App() {
         </div>
         <div className="cta-block">
           <div className="access-code">
-            <span className="access-label">Early Access — 1 Month Free</span>
+            <span className="access-label">Early Access — 3 Day Free Trial</span>
             <span className="scratch-wrapper">
-              <span className="access-value">ARISTCLAW</span>
+              <span className="access-value">ARISTAI+OPENCLAW</span>
               <span className="scratch-cover">
                 <span className="scratch-text">HOVER TO REVEAL</span>
               </span>
